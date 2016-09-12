@@ -5,3 +5,9 @@
 3. get server listening
 4. serving the index.html
 5. connect module and post route
+6. code out the calculate module and test each case
+  {"x": "4", "y": "3", "type": "add"}
+  {"x": "4", "y": "3", "type": "subtract"}
+  {"x": "4", "y": "3", "type": "multiply"}
+  {"x": "4", "y": "3", "type": "divide"}
+  {"x": "4", "y": "3", "type": "errrradkjf"}

@@ -20,8 +20,13 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
   console.log('in post route');
   console.log('req.body in post =', req.body);
-  calculate(req.body);
-  res.sendStatus(200);
+  var result = calculate(req.body);
+
+  var returnObject = {
+    answer: result
+  };
+
+  res.send(returnObject);
 });
 
 var server = app.listen('3000', function() {
