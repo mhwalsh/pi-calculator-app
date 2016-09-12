@@ -26,10 +26,17 @@ $(function() {
       success: function(result) {
         console.log('succes, result=', result);
         //display
+        display(result);
       },
       error: function() {
         console.log('error connecting to server');
       }
     }); // end ajax
   }); // end of calculate on click
+
+  function display(resultObject) {
+    console.log('in display', resultObject );
+    $('#outputDiv').text("Answer = " + resultObject.answer);
+  }
+
 }); // end of doc ready
