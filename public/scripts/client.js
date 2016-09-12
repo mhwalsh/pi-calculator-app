@@ -18,5 +18,18 @@ $(function() {
       type: operator
     };
     console.log('toSend', toSend);
-  });
-});
+
+    $.ajax({
+      type: 'POST',
+      url: '/',
+      data: toSend,
+      success: function(result) {
+        console.log('succes, result=', result);
+        //display
+      },
+      error: function() {
+        console.log('error connecting to server');
+      }
+    }); // end ajax
+  }); // end of calculate on click
+}); // end of doc ready

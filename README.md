@@ -12,3 +12,5 @@
   {"x": "4", "y": "3", "type": "divide"}
   {"x": "4", "y": "3", "type": "errrradkjf"}
 7. form
+8. wired up the calculate button and grab field data
+9. ajax call
